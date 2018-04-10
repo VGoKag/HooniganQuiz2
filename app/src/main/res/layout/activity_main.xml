@@ -173,7 +173,7 @@
             android:id="@+id/q5_EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="two dudes"
+            android:hint="First Last"
             android:inputType="textPersonName"
             android:singleLine="true" />
 

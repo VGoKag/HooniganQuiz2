@@ -1,0 +1,371 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="question1Clicked"
+            android:text="1. What is Hoonigan?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q1_radio_motorsports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question1Clicked"
+                android:text="Motorsport-lifestyle brand" />
+
+            <RadioButton
+                android:id="@+id/q1_radio_skateboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question1Clicked"
+                android:text="Skateboarding company" />
+
+            <RadioButton
+                android:id="@+id/q1_radio_metal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question1Clicked"
+                android:text="Metal Fabrication Shop" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. What kind of products does Hoonican sell on their website?"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/q2_shirts_tanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shirts and Tanks" />
+
+        <CheckBox
+            android:id="@+id/q2_hats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hats" />
+
+        <CheckBox
+            android:id="@+id/q2_hair_stuff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hair stuff" />
+
+        <CheckBox
+            android:id="@+id/q2_motor_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motor Oil" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="question3Clicked"
+            android:text="3. Which segment of the Hoonigan YouTube channel has the most content?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q3_radio_unprofessionals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question3Clicked"
+                android:text="The Unprofessionals" />
+
+            <RadioButton
+                android:id="@+id/q3_radio_daily_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question3Clicked"
+                android:text="Daily Transmissions" />
+
+            <RadioButton
+                android:id="@+id/q3_radio_field_trips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question3Clicked"
+                android:text="Field Trips" />
+
+            <RadioButton
+                android:id="@+id/q3_radio_tangents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question3Clicked"
+                android:text="DT Tangents" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. What kind of cars are expected to be featured on Daily Transmissions?"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/q4_lowriders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lowriders" />
+
+        <CheckBox
+            android:id="@+id/q4_off_road_trucks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Off-road trucks" />
+
+        <CheckBox
+            android:id="@+id/q4_drift_beasts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drift beasts" />
+
+        <CheckBox
+            android:id="@+id/q4_classics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classics" />
+
+        <CheckBox
+            android:id="@+id/q4_exotics_supercars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exotics and Super cars" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. The Founders of Hoonigan are Brian Scotto and ________."
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/q5_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="two dudes"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Who is known to always break things on other people's cars?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q6_radio_rob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question6Clicked"
+                android:text="Rob" />
+
+            <RadioButton
+                android:id="@+id/q6_radio_vinny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question6Clicked"
+                android:text="Vinny" />
+
+            <RadioButton
+                android:id="@+id/q6_radio_hertz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question6Clicked"
+                android:text="Hertz" />
+
+            <RadioButton
+                android:id="@+id/q6_radio_dan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question6Clicked"
+                android:text="Dan the Man" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. How many people are subcribers to Hoonigan YouTube channel?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q7_radio_100k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question7Clicked"
+                android:text="less than 100k" />
+
+            <RadioButton
+                android:id="@+id/q7_radio_400k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question7Clicked"
+                android:text="About 400k" />
+
+            <RadioButton
+                android:id="@+id/q7_radio_1mil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question7Clicked"
+                android:text="Just over a million" />
+
+            <RadioButton
+                android:id="@+id/q7_radio_over1mil4thou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question7Clicked"
+                android:text="1,400,000+" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. T or F: Larry Chen owns an SR20 powered Datsun 280Z"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q8_radio_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question8Clicked"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/q8_radio_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question8Clicked"
+                android:text="False" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. What companies partner with the Hoonigan Racing Division?"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/q9_monster_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monster Energy" />
+
+        <CheckBox
+            android:id="@+id/q9_mobile_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile One" />
+
+        <CheckBox
+            android:id="@+id/q9_toyo_tires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toyo Tires" />
+
+        <CheckBox
+            android:id="@+id/q9_can_am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can-Am" />
+
+        <CheckBox
+            android:id="@+id/q9_subaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subaru" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. Which of these featured rides boast 1000HP or more?"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/q10_bj_baldwin_trophy_truck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BJ Baldwin's Trophy Truck" />
+
+        <CheckBox
+            android:id="@+id/q10_bisimoto_minivan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bisimoto's Minivan" />
+
+        <CheckBox
+            android:id="@+id/q10_twerkstallion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hert'z Mazda RX7 TWERKSTALLION" />
+
+        <CheckBox
+            android:id="@+id/q10_leah_pritchett_dragster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leah Pritchett's Top Fuel Dragster" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:onClick="submitQuiz"
+            android:text="Submit" />
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="0"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+</ScrollView>

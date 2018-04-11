@@ -18,7 +18,7 @@ public class CoverActivity extends AppCompatActivity {
     }
 
     public void startButtonCover(View view){
-        Intent intent = new Intent(CoverActivity.this, MainActivity.class);
-        startActivity(intent);
+        Intent intentCover = new Intent(CoverActivity.this, MainActivity.class);
+        startActivity(intentCover);
     }
 }

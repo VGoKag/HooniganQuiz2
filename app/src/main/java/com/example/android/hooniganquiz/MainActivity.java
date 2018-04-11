@@ -18,6 +18,7 @@ import android.widget.RadioGroup;
 public class MainActivity extends AppCompatActivity {
 
     int correctAnswers = 0;
+
     //These variables hold the value of whether or not the Radio button questions were answer correctly. (0 = incorrect, 1 = correct)
     int answerQ1 = 0;
     int answerQ3 = 0;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //set fixed background with scrolling content
+        getWindow().setBackgroundDrawableResource(R.drawable.brownquizbackground);
     }
 
     /**
@@ -315,13 +318,31 @@ public class MainActivity extends AppCompatActivity {
 
         //call the method to tally up the correct answers from the quiz
         calculateScore();
-
-        //display the score onto the screen
-        displayScore(correctAnswers);
+        String resultMessage = createResultMessage(whatsYourName, correctAnswers);
+        displayMessage(resultMessage);
     }
 
     /**
-     * This method adds the points for each question to calulate a percentage Score
+     * create the message for the results
+     */
+    public String createResultMessage(String whatsYourName, int correctAnswers) {
+        CharSequence name = whatsYourName;
+        String resultMessage = "YOU ROCK! " + name;
+        resultMessage += "\nYou scored a " + correctAnswers + " out of 10";
+
+        if (correctAnswers <= 4) {
+            Toast.makeText(this, "ARE YOU ALIVE?", Toast.LENGTH_LONG).show();
+        }else {
+            Toast.makeText(this, "NOT QUITE AN EXPERT...", Toast.LENGTH_LONG).show();
+        }
+        if (correctAnswers == 10) {
+            Toast.makeText(this, "YOU'RE AN EXPERT! 100%", Toast.LENGTH_LONG).show();
+        }
+        return resultMessage;
+    }
+
+    /**
+     * This method adds the points for each question to calculate a percentage Score
      */
     public void calculateScore() {
         correctAnswers = answerQ1 + answerQ3 + answerQ6 + answerQ7 + answerQ8;
@@ -337,4 +358,11 @@ public class MainActivity extends AppCompatActivity {
         scoreOfQuiz.setText("" + correctAnswers);
     }
 
+    /**
+     * This method displays the given text on the screen.
+     */
+    private void displayMessage(String resultMessage) {
+        TextView resultsView = (TextView) findViewById(R.id.score);
+        resultsView.setText(resultMessage);
+    }
 }

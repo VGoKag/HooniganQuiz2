@@ -342,7 +342,6 @@ public class MainActivity extends AppCompatActivity {
         return resultMessage;
     }
 
-
     /**
      * This method adds the points for each question to calculate a percentage Score
      */
@@ -350,14 +349,6 @@ public class MainActivity extends AppCompatActivity {
         correctAnswers = answerQ1 + answerQ3 + answerQ6 + answerQ7 + answerQ8;
         correctAnswers += answerQ2 + answerQ4 + answerQ9 + answerQ10;
         correctAnswers += answerQ5;
-    }
-
-    /**
-     * This method displays the given Score on the screen.
-     */
-    private void displayScore(int correctAnswers) {
-        TextView scoreOfQuiz = (TextView) findViewById(R.id.score);
-        scoreOfQuiz.setText("" + correctAnswers);
     }
 
     /**

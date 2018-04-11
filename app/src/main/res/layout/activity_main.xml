@@ -21,10 +21,10 @@
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/black_ops_one"
                 android:hint="Name"
                 android:inputType="textCapWords"
-                android:textColor="@color/colorPrimaryDark"
-                android:fontFamily="@font/black_ops_one" />
+                android:textColor="@color/colorPrimaryDark" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -33,11 +33,11 @@
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
                 android:onClick="question1Clicked"
+                android:padding="8dp"
                 android:text="1. What is Hoonigan?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:padding="8dp"/>
+                android:textStyle="bold" />
 
 
             <RadioGroup
@@ -58,7 +58,8 @@
                 <RadioButton
                     android:id="@+id/q1_radio_skateboard"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"                   android:onClick="question1Clicked"
+                    android:layout_height="wrap_content"
+                    android:onClick="question1Clicked"
                     android:text="Skateboarding Company"
                     android:textColor="@android:color/holo_blue_light"
                     android:textSize="24sp"
@@ -81,10 +82,10 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="2. What kind of products does Hoonigan sell on their website?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
-                android:padding="8dp"
                 android:textStyle="bold" />
 
             <CheckBox
@@ -130,10 +131,10 @@
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
                 android:onClick="question3Clicked"
+                android:padding="8dp"
                 android:text="3. Which segment of the Hoonigan YouTube channel has the most content?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
-                android:padding="8dp"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -188,10 +189,10 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="4. What kind of cars are expected to be featured on Daily Transmissions?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
-                android:padding="8dp"
                 android:textStyle="bold" />
 
             <CheckBox
@@ -245,10 +246,10 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="5. The Founders of Hoonigan are Brian Scotto and ________."
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
-                android:padding="8dp"
                 android:textStyle="bold" />
 
             <EditText
@@ -269,10 +270,10 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="6. Who is known to always break things on other people's cars?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
-                android:padding="8dp"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -326,8 +327,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
-                android:padding="8dp"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="7. How many people are subcribers to Hoonigan YouTube channel?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
@@ -385,9 +386,9 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="8. T or F: Larry Chen owns an SR20 powered Datsun 280Z"
                 android:textColor="@android:color/black"
-                android:padding="8dp"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -424,10 +425,10 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="9. What companies partner with the Hoonigan Racing Division?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
-                android:padding="8dp"
                 android:textStyle="bold" />
 
             <CheckBox
@@ -480,8 +481,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
-                android:padding="8dp"
                 android:fontFamily="@font/black_ops_one"
+                android:padding="8dp"
                 android:text="10. Which of these featured rides boast 1000HP or more?"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"

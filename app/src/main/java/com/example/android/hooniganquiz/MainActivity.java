@@ -332,14 +332,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (correctAnswers <= 4) {
             Toast.makeText(this, "ARE YOU ALIVE?", Toast.LENGTH_LONG).show();
-        }else {
-            Toast.makeText(this, "NOT QUITE AN EXPERT...", Toast.LENGTH_LONG).show();
+            return resultMessage;
         }
         if (correctAnswers == 10) {
             Toast.makeText(this, "YOU'RE AN EXPERT! 100%", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "NOT QUITE AN EXPERT...", Toast.LENGTH_LONG).show();
         }
         return resultMessage;
     }
+
 
     /**
      * This method adds the points for each question to calculate a percentage Score

@@ -17,7 +17,7 @@ public class CoverActivity extends AppCompatActivity {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
 
-    public void startButtonCover(View view){
+    public void startButtonCover(View view) {
         Intent intentCover = new Intent(CoverActivity.this, MainActivity.class);
         startActivity(intentCover);
     }
